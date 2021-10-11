@@ -1,0 +1,56 @@
+{
+  "name": "digital-service",
+  "version": "1.0.0",
+  "description": "API for JSON-based web service",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "tsnd --cls src/index.ts",
+    "build": "tsc",
+    "formatting": "prettier --check ./src",
+    "lint": "eslint ./src",
+    "test": "jest --verbose -c jest.config.js",
+    "test:unit": "jest --verbose -c jest.config.unit.js",
+    "test:integration": "jest --verbose -c jest.config.int.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/promie/digital-service"
+  },
+  "author": "Promie Yutasane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/promie/digital-service/issues"
+  },
+  "homepage": "https://github.com/promie/digital-service#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.8",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pino": "^6.6.1",
+    "@types/pino": "^6.3.0",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.0.0-pre.62",
+    "tslib": "^2.3.1",
+    "typescript": "^4.0.2",
+    "pino-pretty": "^4.2.1",
+    "http-status": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-functional": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^26.3.0"
+  }
+}
